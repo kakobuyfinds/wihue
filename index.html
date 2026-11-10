@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>DgoBuy spreadsheet – liens, tailles et photos QC</title>
+  <meta name="description" content="Guide DgoBuy en français. Comparez les liens produits, vérifiez les tailles et les photos QC, puis estimez le coût de votre colis avant de commander.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#faf2e7">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="DgoBuy spreadsheet – liens, tailles et photos QC">
+  <meta property="og:description" content="Repérez une référence, comparez les mesures et préparez votre budget avant la commande.">
+  <meta property="og:image" content="https://cdn.sneakersquad.nl/uploads/sneakers/CN0149-001.png?bg=FFF&amp;fit=fill&amp;fm=webp&amp;h=1200&amp;pad=40&amp;signature=6669ef02&amp;trim=auto&amp;trim-sd=1&amp;v=1701688038&amp;w=1200">
+  <meta property="og:image:alt" content="Basket Nike P-6000 argentée de profil, avec un Swoosh noir">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- index.html
+  La première page Google n'a pas pu être vérifiée. Dix résultats de recherche
+  alternatifs pour « DgoBuy spreadsheet » ont servi à repérer les thèmes suivants.
+  qcradar.com/dgobuy-spreadsheet — recherche d'articles et catalogues.
+  mixfittio.com/en/spreadsheet/dgobuy — catégories et repérage de produits.
+  sugargoo.tips/dgobuy-spreadsheet — achat et inspection.
+  rizzi-tgo.com/dgobuy-spreadsheet — suivi des références et douane.
+  tiktokspreadsheet.net/dgobuy-spreadsheet — recherche à partir d'un visuel.
+  cnfanssheet.com/dgobuy-spreadsheet — préparation du colis.
+  bbd-buy.org/dgobuy-spreadsheet — photos QC et coûts.
+  usfanskakobuy.net/dgobuy-spreadsheet — contrôle à réception et expédition.
+  fashionreps.tips/dgobuy-spreadsheet — frais et formalités.
+  kakobuyde.net/dgobuy-spreadsheet — poids et coûts de transport.
+  Requêtes secondaires : guide DgoBuy en français, liens produits DgoBuy,
+  photos QC DgoBuy, livraison DgoBuy en France.
+  L'adresse publique de la page reste à définir avant d'ajouter sa canonical.
+  -->
+  <style>
+    :root{color-scheme:light;--paper:#faf2e7;--ink:#25251e;--muted:#5f554b;--rule:#d4c4b3;--accent:#a22e20;--tint:#f6dace;--white:#fffdf9}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.14;text-wrap:balance}
+    h1{font-size:clamp(2.55rem,7vw,5.65rem);letter-spacing:-.07em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.6rem,3.4vw,2.75rem);letter-spacing:-.045em}
+    h3{font-size:1.2rem;letter-spacing:-.02em}
+    a{color:inherit;text-underline-offset:.25em}
+    a:focus-visible,summary:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+    .wrap{width:min(73rem,calc(100% - 2rem));margin-inline:auto}
+    .mast,.foot{border-block-end:1px solid var(--rule)}
+    .mast .wrap,.foot .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;flex-wrap:wrap;padding-block:.85rem}
+    .logo{font-weight:850;letter-spacing:-.035em;text-decoration:none}
+    .label{color:var(--accent);font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+    .opening{display:grid;grid-template-columns:1.45fr 1fr;grid-template-areas:"intro photo" "nav photo";gap:1.3rem 2.6rem;padding-block:clamp(1.8rem,5vw,4rem);align-items:start}
+    .intro{grid-area:intro}
+    .intro h1{margin:.4rem 0 .85rem}
+    .intro p:last-child{max-width:57ch;color:var(--muted)}
+    .category-nav{grid-area:nav}
+    .category-nav h2{font-size:1.2rem;letter-spacing:0;margin-bottom:.6rem}
+    .category-nav ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1rem;list-style:none;margin:0;padding:0;border-block-end:1px solid var(--rule)}
+    .category-nav a{display:flex;justify-content:space-between;align-items:center;gap:.4rem;min-height:2.75rem;padding:.45rem .2rem;border-block-start:1px solid var(--rule);font-weight:700;font-size:.87rem;text-decoration:none}
+    .category-nav a:hover{background:var(--tint);text-decoration:underline}
+    .category-nav span{color:var(--accent)}
+    .photo{grid-area:photo;padding:.65rem;background:var(--tint);align-self:center}
+    img{display:block;width:100%;height:auto;background:#fff;object-fit:contain}
+    .photo img{aspect-ratio:1}
+    figcaption{padding:.6rem .35rem .2rem;font-size:.85rem;color:var(--muted)}
+    .brief{background:var(--accent);color:white}
+    .brief .wrap{display:grid;grid-template-columns:1fr 1.8fr;gap:1rem 2rem;align-items:start;padding-block:1.6rem}
+    .brief h2{font-size:1.5rem}
+    .block{padding-block:clamp(2.2rem,5.4vw,4rem);border-block-end:1px solid var(--rule)}
+    .heading{margin-bottom:1.4rem}
+    .heading .label{margin-bottom:.4rem}
+    .articles{display:grid;gap:.8rem}
+    .articles article{display:grid;grid-template-columns:minmax(10rem,1fr) minmax(0,2fr);gap:.6rem 1.5rem;padding:1.2rem;background:var(--white);border-inline-start:4px solid var(--accent)}
+    .articles h3 span{display:block;color:var(--accent);font-size:.76rem;margin-bottom:.5rem}
+    .examples{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
+    .examples figure{min-width:0;background:var(--white);border:1px solid var(--rule)}
+    .examples img{aspect-ratio:1}
+    .examples figcaption{padding:.75rem}
+    .examples strong{display:block;margin-bottom:.2rem;color:var(--ink)}
+    .check{display:grid;grid-template-columns:1fr 1.8fr;gap:1rem 2rem;align-items:start}
+    .check ol{padding-left:1.35rem;margin:0}
+    .check li+li{margin-top:.55rem}
+    .faq{max-width:52rem}
+    details{border-block-start:1px solid var(--rule)}
+    details:last-child{border-block-end:1px solid var(--rule)}
+    summary{padding:.85rem .2rem;font-weight:750;cursor:pointer}
+    summary::marker{color:var(--accent)}
+    details p{padding:0 .2rem .9rem}
+    .closing{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:1.3rem 0}
+    .button{display:inline-block;background:var(--accent);color:#fff;padding:.65rem 1rem;text-decoration:none;font-weight:750}
+    .button:hover{background:#7e2116}
+    .foot{border-block-start:1px solid var(--rule);border-block-end:0;font-size:.84rem;color:var(--muted)}
+    @media(max-width:48rem){
+      .opening{grid-template-columns:1fr;grid-template-areas:"intro" "nav" "photo";gap:1.1rem}
+      .photo{width:min(100%,25rem);justify-self:center}
+      .brief .wrap,.check,.articles article{grid-template-columns:1fr}
+      .examples{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "inLanguage":"fr",
+    "name":"DgoBuy spreadsheet – liens, tailles et photos QC",
+    "description":"Guide DgoBuy en français. Comparez les liens produits, vérifiez les tailles et les photos QC, puis estimez le coût de votre colis avant de commander.",
+    "mainEntity":[
+      {"@type":"Question","name":"Qu’est-ce qu’un DgoBuy spreadsheet ?","acceptedAnswer":{"@type":"Answer","text":"L’expression désigne un tableau de liens utilisé pour repérer et comparer des articles. Vérifiez la fiche du vendeur pour confirmer la variante, les mesures et la disponibilité."}},
+      {"@type":"Question","name":"Que faire si un lien produit est expiré ?","acceptedAnswer":{"@type":"Answer","text":"Recherchez la référence du modèle et le nom du vendeur. Avant de retenir une nouvelle fiche, comparez le coloris, la matière et les mesures avec vos notes."}},
+      {"@type":"Question","name":"Une photo QC suffit-elle pour vérifier l’authenticité ?","acceptedAnswer":{"@type":"Answer","text":"Non. Une photo QC aide à contrôler l’état visible et la variante reçue. Pour vérifier la provenance, demandez un justificatif au vendeur et, si nécessaire, faites appel à un service d’authentification indépendant."}},
+      {"@type":"Question","name":"Où mènent les liens de ce guide ?","acceptedAnswer":{"@type":"Answer","text":"Les catégories ouvrent les rayons correspondants sur CAFANS. Les autres liens ouvrent son accueil. Cette page est un guide éditorial indépendant."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/wihue/">
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap">
+      <a class="logo" href="https://www.cafans.com">www.cafans.com</a>
+      <p class="label">Guide d’achat en français</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap opening">
+      <div class="intro">
+        <p class="label">Carnet de repérage</p>
+        <h1>DgoBuy spreadsheet</h1>
+        <p>Gardez la bonne référence entre le premier repérage et la commande. Ce guide DgoBuy en français explique comment comparer des fiches, lire les mesures et vérifier le contenu d’un colis.</p>
+      </div>
+      <nav class="category-nav" aria-labelledby="categories">
+        <h2 id="categories">Explorer les rayons CAFANS</h2>
+        <ul>
+          <li><a href="https://cafans.com/category-911-Shoes.html">Chaussures <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Sweats et pulls <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Vestes <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantalons et shorts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Casquettes et bonnets <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Ensembles <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Sous-vêtements <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Maillots <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+      <figure class="photo">
+        <img src="https://cdn.sneakersquad.nl/uploads/sneakers/CN0149-001.png?bg=FFF&amp;fit=fill&amp;fm=webp&amp;h=1200&amp;pad=40&amp;signature=6669ef02&amp;trim=auto&amp;trim-sd=1&amp;v=1701688038&amp;w=1200" width="1200" height="1200" alt="Basket Nike P-6000 argentée de profil, avec un Swoosh noir" fetchpriority="high" loading="eager">
+        <figcaption>Le profil d’une Nike P-6000 montre la forme du talon et la hauteur de la semelle.</figcaption>
+      </figure>
+    </div>
+
+    <section class="brief" aria-labelledby="role">
+      <div class="wrap">
+        <h2 id="role">À quoi sert le tableau&nbsp;?</h2>
+        <p>Il sert à réunir plusieurs liens pour comparer des articles. Pour chaque option, notez le vendeur, la référence et la variante. Relisez la fiche active avant de commander&nbsp;: une ancienne ligne peut pointer vers une annonce modifiée.</p>
+      </div>
+    </section>
+
+    <section class="wrap block" aria-labelledby="dossiers">
+      <header class="heading">
+        <p class="label">Trois dossiers pratiques</p>
+        <h2 id="dossiers">De la fiche au colis</h2>
+      </header>
+      <div class="articles">
+        <article>
+          <h3><span>01 / Référence</span>Comparer les liens produits DgoBuy</h3>
+          <p>Pour retrouver un produit depuis une photo, relevez d’abord le code du modèle, puis comparez la forme, le coloris et la matière. Sauvegardez la fiche du vendeur avec la date de consultation et le nom exact de la variante. Pour un ensemble, vérifiez la composition du lot et la taille de chaque pièce.</p>
+        </article>
+        <article>
+          <h3><span>02 / Mesures</span>Choisir sa taille avec un vêtement témoin</h3>
+          <p>Posez à plat un T-shirt qui vous va. Mesurez la largeur sous les aisselles et la longueur du dos, puis comparez-les au tableau du vendeur. Vérifiez si la mesure donnée correspond à une largeur à plat ou à un tour complet. Pour les baskets, mesurez la longueur des deux pieds et suivez le guide de pointure du modèle.</p>
+        </article>
+        <article>
+          <h3><span>03 / Réception</span>Lire les photos QC DgoBuy</h3>
+          <p>Le contrôle qualité visuel commence par l’étiquette de taille, la couleur et le nombre de pièces reçues. Examinez ensuite les coutures et les zones sujettes aux marques. Si un détail reste flou, demandez un gros plan de l’unité reçue. Une photo avec une règle facilite la vérification des dimensions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap block" aria-labelledby="details">
+      <header class="heading">
+        <p class="label">Repères visuels</p>
+        <h2 id="details">Quatre détails à regarder de près</h2>
+        <p>Les références illustrent les points à vérifier. Consultez le catalogue pour connaître les articles disponibles.</p>
+      </header>
+      <div class="examples">
+        <figure>
+          <img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-iconic-cap--M7051L_PM2_Front%20view.jpg" width="600" height="600" alt="Casquette LV Iconic beige avec initiales dorées et visière incurvée" loading="lazy" decoding="async">
+          <figcaption><strong>Casquette Louis Vuitton</strong>Vérifiez le tour de tête et le type de réglage à l’arrière.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1753107304/784413_XJG58_1056_002_100_0000_Light-cotton-jersey-sweatshirt-with-embroidery.jpg" width="1200" height="1200" alt="Sweat Gucci gris à col rond avec une petite broderie GG sur la poitrine" loading="lazy" decoding="async">
+          <figcaption><strong>Sweat Gucci</strong>Comparez la longueur des manches et la finition des poignets.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/943J605A0554C080_E01-3?%24default_GHC%24=&amp;crop=438%2C150%2C1130%2C1358" width="1130" height="1358" alt="T-shirt Dior CD Icon en jersey blanc à col rond" loading="lazy" decoding="async">
+          <figcaption><strong>T-shirt Dior</strong>Repérez la forme du col et comparez la largeur des épaules.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.crepslocker.com/cdn/shop/files/hermes-paris-clic-h-black-bracelet-h700001fv01pm-front.webp?v=1716898801&amp;width=1200" width="1200" height="1200" alt="Bracelet Hermès Clic H noir avec fermoir en H doré" loading="lazy" decoding="async">
+          <figcaption><strong>Bracelet Hermès</strong>Comparez le périmètre intérieur avec le tour de poignet et examinez le fermoir.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap block check" aria-labelledby="livraison">
+      <div>
+        <p class="label">Budget avant validation</p>
+        <h2 id="livraison">Livraison DgoBuy en France</h2>
+      </div>
+      <ol>
+        <li><strong>Calculez le coût total.</strong> Relevez le prix de l’article, les frais d’envoi intérieur, les frais de service éventuels et le devis de transport international.</li>
+        <li><strong>Demandez les dimensions emballées.</strong> Comparez le poids réel et le poids volumétrique selon la méthode de calcul du transporteur. Pour un envoi groupé, demandez une estimation du colis complet.</li>
+        <li><strong>Vérifiez les conditions à destination.</strong> Relisez les modalités de suivi, les restrictions, les frais à l’importation éventuellement dus et les conditions de retour avant paiement.</li>
+      </ol>
+    </section>
+
+    <section class="wrap block" aria-labelledby="questions">
+      <header class="heading">
+        <p class="label">Réponses rapides</p>
+        <h2 id="questions">Questions fréquentes</h2>
+      </header>
+      <div class="faq">
+        <details open>
+          <summary>Qu’est-ce qu’un DgoBuy spreadsheet ?</summary>
+          <p>L’expression désigne un tableau de liens utilisé pour repérer et comparer des articles. Vérifiez la fiche du vendeur pour confirmer la variante, les mesures et la disponibilité.</p>
+        </details>
+        <details>
+          <summary>Que faire si un lien produit est expiré ?</summary>
+          <p>Recherchez la référence du modèle et le nom du vendeur. Avant de retenir une nouvelle fiche, comparez le coloris, la matière et les mesures avec vos notes.</p>
+        </details>
+        <details>
+          <summary>Une photo QC suffit-elle pour vérifier l’authenticité ?</summary>
+          <p>Non. Une photo QC aide à contrôler l’état visible et la variante reçue. Pour vérifier la provenance, demandez un justificatif au vendeur et, si nécessaire, faites appel à un service d’authentification indépendant.</p>
+        </details>
+        <details>
+          <summary>Où mènent les liens de ce guide ?</summary>
+          <p>Les catégories ouvrent les rayons correspondants sur CAFANS. Les autres liens ouvrent son accueil. Cette page est un guide éditorial indépendant.</p>
+        </details>
+      </div>
+    </section>
+
+    <div class="wrap closing">
+      <p>Une référence en tête&nbsp;? Retrouvez les rayons et les fiches sur CAFANS.</p>
+      <a class="button" href="https://www.cafans.com">Parcourir CAFANS</a>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Guide indépendant. Les marques servent de références visuelles.</p>
+      <a href="https://www.cafans.com">www.cafans.com</a>
+    </div>
+  </footer>
+</body>
+</html>
